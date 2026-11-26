@@ -1,8 +1,8 @@
 // [SPRINT 04 — HERDADO] store.js: persistência JSON
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
-const PASTA = new URL("./data/", import.meta.url);
-const ARQUIVO = new URL("./data/mensagens.json", import.meta.url);
+const PASTA = new URL("../data/", import.meta.url)
+const ARQUIVO = new URL("../data/mensagens.json", import.meta.url)
 
 export async function lerMensagens() {
   try {
